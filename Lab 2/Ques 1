@@ -1,0 +1,16 @@
+//multiplicative congruential method
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x=117,a=43,c=0,m=1000,num=4;
+
+    for(int i=1;i<=num;i++){
+        cout<<"Iteration "<<i<<endl;
+        x=((a*x)+c)%m;
+        cout<<"x"<<i<<":"<<x<<endl;
+        cout<<"R"<<i<<":"<<(float)x/m<<endl<<endl;
+    }
+
+    return 0;
+}
